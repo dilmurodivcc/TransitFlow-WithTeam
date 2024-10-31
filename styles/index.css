@@ -1,0 +1,14 @@
+:root {
+  --font-family: "Krub", sans-serif;
+  --second-family: "Rubik", sans-serif;
+  --third-family: "League Spartan", sans-serif;
+  --font3: "Syne", sans-serif;
+  --font4: "Times New Roman", sans-serif;
+  --font5: "Thabit", sans-serif;
+  --font6: "Lato", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
