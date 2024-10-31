@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap"
@@ -58,7 +65,7 @@
         <div class="header">
           <div class="container">
             <div class="nav">
-              <a style="margin-right: 30px" href="#">Home</a>
+              <a style="margin-right: 30px" href="../index.html">Home</a>
               <div class="stroke">
                 <a href="#">About</a>
               </div>
@@ -94,7 +101,7 @@
     </section>
     <section class="Our">
       <div class="container">
-        <div data-aos="zoom-in-down"   class="images">
+        <div data-aos="zoom-in-down" class="images">
           <img
             style="height: 400px; width: 630px"
             src="../images/Our-img.png"
@@ -160,7 +167,7 @@
               </p>
             </div>
           </div>
-          <div  data-aos="zoom-out-up" class="line">
+          <div data-aos="zoom-out-up" class="line">
             <div class="card">
               <img src="../icons/Icon (4).svg" alt="" />
               <b>Project & Exhibition</b>
@@ -201,9 +208,12 @@
         <div class="text"><p>The Transporters</p></div>
         <h2>Meet Expert Team</h2>
         <div class="cards">
-          <div data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"  class="card">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            class="card"
+          >
             <img class="user" src="../images/userphoto.png" alt="" />
             <div class="sacial-icons">
               <img style="margin-right: 25px" src="../icons/1.svg" alt="" />
@@ -216,9 +226,12 @@
               <p>Designer</p>
             </div>
           </div>
-          <div data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000" class="card">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            class="card"
+          >
             <img class="user" src="../images/Image (3).png" alt="" />
             <div class="sacial-icons">
               <img style="margin-right: 25px" src="../icons/./In.svg" alt="" />
@@ -232,9 +245,12 @@
               <p>Designer</p>
             </div>
           </div>
-          <div data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000" class="card">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            class="card"
+          >
             <img class="user" src="../images/Photo (4).png" alt="" />
             <div class="sacial-icons">
               <img style="margin-right: 25px" src="../icons/1.svg" alt="" />
@@ -249,14 +265,56 @@
         </div>
       </div>
     </section>
+    <button id="backToTopBtn">
+      <i><i class="fa-solid fa-arrow-up"></i></i>
+    </button>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      AOS.init(
-       {
-        duration: 2000
-       }
-      );
+      AOS.init({
+        duration: 2000,
+      });
+      const customCursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+  const smoke = document.createElement("div");
+  smoke.classList.add("tutun");
+
+  smoke.style.left = `${e.pageX}px`;
+  smoke.style.top = `${e.pageY}px`;
+
+  document.body.appendChild(smoke);
+
+  setTimeout(() => {
+    smoke.style.opacity = "0";
+  }, 100);
+
+  setTimeout(() => {
+    smoke.remove();
+  }, 600);
+});
+      let backToTopBtn = document.getElementById("backToTopBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      }
+
+      backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
   </body>
 </html>
