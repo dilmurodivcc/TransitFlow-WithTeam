@@ -11,4 +11,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  align-items: center;
+  background-color: #091242;
+  height: 160px;
+}
+.logo{
+  margin-left: 160px;
+}
+.clock{
+  margin-left: 200px;
+}
+nav>p{
+  color: white;
+  max-width: 176px;
+  margin-left: 10px;
 }
