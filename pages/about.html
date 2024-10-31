@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap"
       rel="stylesheet"
@@ -14,14 +16,14 @@
     <link rel="shortcut icon" href="../icons/favicon.svg" type="image/x-icon" />
   </head>
   <body>
-    <header>
+    <header data-aos="zoom-out-down">
       <div class="container">
         <div class="logo">
           <img src="../icons/favicon.svg" alt="" />
           <p>TransitFlow</p>
         </div>
         <nav>
-          <div class="info">
+          <div data-aos="flip-left" class="info">
             <div class="icon">
               <img src="../icons/icon.svg" alt="" />
             </div>
@@ -30,7 +32,7 @@
               <p>Sunday Closed</p>
             </div>
           </div>
-          <div class="info">
+          <div data-aos="flip-left" class="info">
             <div class="icon">
               <img src="../icons/icon.svg" alt="" />
             </div>
@@ -39,7 +41,7 @@
               <a href="mailto:contact@logistics.com">contact@logistics.com</a>
             </div>
           </div>
-          <div class="info">
+          <div data-aos="flip-left" class="info">
             <div class="icon">
               <img src="../icons/icon.svg" alt="" />
             </div>
@@ -82,7 +84,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="content">
+          <div data-aos="flip-up" class="content">
             <div class="text"><p>About Us</p></div>
             <h1>About Our Logistics</h1>
           </div>
@@ -92,14 +94,14 @@
     </section>
     <section class="Our">
       <div class="container">
-        <div class="images">
+        <div data-aos="zoom-in-down"   class="images">
           <img
             style="height: 400px; width: 630px"
             src="../images/Our-img.png"
             alt="IMG"
           />
         </div>
-        <div class="content">
+        <div data-aos="zoom-in-left" class="content">
           <div class="text"><p>About Us</p></div>
           <h2>Our Company Overview</h2>
           <p>
@@ -118,9 +120,143 @@
             quae ab illo inventoreveritatis et quasi architecto beatae vitae
             dicta sunt, explicabo. Nemo enim ipsam voluptatem quia voluptassit.
           </p>
-          <div class="btns-blue"><button class="btn-blue">Learn More</button> <div ></div></div>
+          <div class="btns-blue">
+            <button class="btn-blue">Learn More</button>
+            <div></div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="logist">
+      <div class="container">
+        <div class="text"><p>About Us</p></div>
+        <h3>Our Logistics Services</h3>
+        <div class="cards">
+          <div data-aos="zoom-out-down" class="line">
+            <div class="card">
+              <img src="../icons/Icon (1).svg" alt="" />
+              <b>Sea Transport Services</b>
+              <p>
+                Following the quality of our service <br />
+                thus having gained trust of our <br />many clients.
+              </p>
+            </div>
+            <div class="card">
+              <img src="../icons/Icon (2).svg" alt="" />
+              <b>Warehousing Services</b>
+              <p>
+                Following the quality of our service <br />thus having gained
+                trust of our <br />
+                many clients.
+              </p>
+            </div>
+            <div class="card">
+              <img src="../icons/Icon (3).svg" alt="" />
+              <b>Air Fright Services</b>
+              <p>
+                Following the quality of our service <br />thus having gained
+                trust of our <br />
+                many clients.
+              </p>
+            </div>
+          </div>
+          <div  data-aos="zoom-out-up" class="line">
+            <div class="card">
+              <img src="../icons/Icon (4).svg" alt="" />
+              <b>Project & Exhibition</b>
+              <p>
+                Following the quality of our service <br />
+                thus having gained trust of our <br />
+                many clients.
+              </p>
+            </div>
+            <div class="card">
+              <img src="../icons/Icon (6).svg" alt="" />
+              <b>Local Shipping Services</b>
+              <p>
+                Following the quality of our service <br />thus having gained
+                trust of our <br />
+                many clients.
+              </p>
+            </div>
+            <div class="card">
+              <img src="../icons/Icon (6).svg" alt="" />
+              <b>Customer Clearance</b>
+              <p>
+                Following the quality of our service <br />
+                thus having gained trust of our <br />
+                many clients.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 50px" class="btns-blue">
+          <button class="btn-blue">Learn More</button>
+          <div></div>
+        </div>
+      </div>
+    </section>
+    <section class="meet">
+      <div class="container">
+        <div class="text"><p>The Transporters</p></div>
+        <h2>Meet Expert Team</h2>
+        <div class="cards">
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"  class="card">
+            <img class="user" src="../images/userphoto.png" alt="" />
+            <div class="sacial-icons">
+              <img style="margin-right: 25px" src="../icons/1.svg" alt="" />
+              <img style="margin-right: 25px" src="../icons/2.svg" alt="" />
+              <img src="../icons/3.svg" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="footer">
+              <b>Jessca Arow</b>
+              <p>Designer</p>
+            </div>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="card">
+            <img class="user" src="../images/Image (3).png" alt="" />
+            <div class="sacial-icons">
+              <img style="margin-right: 25px" src="../icons/./In.svg" alt="" />
+              <img style="margin-right: 25px" src="../icons/1.svg" alt="" />
+              <img style="margin-right: 25px" src="../icons/2.svg" alt="" />
+              <img src="../icons/3.svg" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="footer">
+              <b>Kathleen Smith</b>
+              <p>Designer</p>
+            </div>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="card">
+            <img class="user" src="../images/Photo (4).png" alt="" />
+            <div class="sacial-icons">
+              <img style="margin-right: 25px" src="../icons/1.svg" alt="" />
+              <img src="../icons/2.svg" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="footer">
+              <b>Rebecca Tylor </b>
+              <p>Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init(
+       {
+        duration: 2000
+       }
+      );
+    </script>
   </body>
 </html>

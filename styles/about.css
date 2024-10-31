@@ -81,6 +81,12 @@ header a:hover {
   background-color: rgba(9, 18, 66, 0.25);
   z-index: 4;
   overflow: hidden;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
 }
 .baner .header .container {
   display: flex;
@@ -182,7 +188,6 @@ header a:hover {
   gap: 100px;
   margin-top: 100px;
   margin-bottom: 100px;
-
 }
 .Our .content {
   align-items: start;
@@ -221,7 +226,6 @@ header a:hover {
   text-align: center;
   color: #fff;
   z-index: 10 !important;
-  
 }
 
 .btns-blue {
@@ -273,12 +277,161 @@ header a:hover {
   border-left: 4px solid #ffb629;
   margin-bottom: 10px;
   text-align: center;
-
 }
-.Our .content .text p{
+.Our .content .text p {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 14px !important;
   color: #1c1f35;
   text-align: center;
+}
+.logist .text {
+  padding: 3px 9px;
+  width: 90px;
+  height: 22px;
+  background: #f4f4f4;
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.logist .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+
+.logist {
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+.logist h3 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #1c1f35;
+  margin-top: 15px;
+}
+
+.logist .btns-blue {
+  margin-top: 50px;
+}
+.logist .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logist .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  margin-top: 50px;
+}
+.logist .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.logist .cards .card img {
+  display: block;
+  margin-bottom: 20px;
+}
+.logist .cards .card b {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  color: #1c1f35;
+}
+.logist .cards .card p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #666c89;
+  margin-top: 10px;
+}
+.meet {
+  padding: 100px 0;
+}
+.meet .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meet .text {
+  padding: 3px 9px;
+  width: 150px;
+  height: 22px;
+  background: #f4f4f4;
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.meet .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+.meet h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #1c1f35;
+  margin-top: 16px;
+}
+.meet .user {
+  width: 360px;
+  height: 430px;
+}
+.meet .card {
+  width: 360px;
+  height: 530px;
+  position: relative;
+  overflow: hidden;
+}
+.meet .sacial-icons {
+  position: absolute;
+  z-index: 20;
+  bottom: 100px;
+  right: 0px;
+  padding: 20px 17px 20px 20px;
+  transform: translate(0%, 50%);
+  background: linear-gradient(127deg, #ffb629 0%, #ffda56 50.72%, #ffd7a6 100%);
+  display: flex;
+}
+.meet .footer {
+  height: 110px;
+  background-color: #1c1f35;
+  width: 100%;
+  margin-top: -10px;
+  padding: 35px;
+}
+.meet .footer b {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.meet .footer p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #fff;
+}
+.meet .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
 }
