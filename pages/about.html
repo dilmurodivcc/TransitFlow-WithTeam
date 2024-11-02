@@ -32,7 +32,7 @@
         <nav>
           <div class="info">
             <div class="icon">
-              <img src="../icons/icon.svg" alt="" />
+              <img src="../icons/Icon.svg" alt="" />
             </div>
             <div class="text">
               <p>Mon - Sat 9.00 - 18.00</p>
@@ -41,7 +41,7 @@
           </div>
           <div class="info">
             <div class="icon">
-              <img src="../icons/icon.svg" alt="" />
+              <img src="../icons/mail.svg" alt="" />
             </div>
             <div class="text">
               <p>Email</p>
@@ -50,7 +50,7 @@
           </div>
           <div class="info">
             <div class="icon">
-              <img src="../icons/icon.svg" alt="" />
+              <img src="../icons/call.svg" alt="" />
             </div>
             <div class="text">
               <p>Call Us</p>
@@ -265,6 +265,130 @@
         </div>
       </div>
     </section>
+    <section class="comments">
+      <div class="container">
+        <div class="text"><p>Testimonial</p></div>
+        <div class="line">
+          <h2>What Our Customer Say</h2>
+          <div class="arrows">
+            <img src="../icons/_.svg" alt="" />
+            <img src="../icons/_ (1).svg" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="card">
+            <div class="profile">
+              <div class="user">
+                <img src="../images/User.png" alt="" />
+                <div class="text-box">
+                  <b>Kathleen Smith</b>
+                  <p>Fuel Company</p>
+                </div>
+              </div>
+              <div class="icon"><img src="../icons/“ (1).svg" alt="" /></div>
+            </div>
+            <p class="textt">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value proposition. Organically grow the holistic world view of
+              disruptive innovation via workplace diversity and empowerment.
+            </p>
+            <img src="../icons/Star (1).svg" alt="" />
+          </div>
+          <div class="card">
+            <div class="profile">
+              <div class="user">
+                <img src="../images/User.png" alt="" />
+                <div class="text-box">
+                  <b>Kathleen Smith</b>
+                  <p>Fuel Company</p>
+                </div>
+              </div>
+              <div class="icon"><img src="../icons/“ (1).svg" alt="" /></div>
+            </div>
+            <p class="textt">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value proposition. Organically grow the holistic world view of
+              disruptive innovation via workplace diversity and empowerment.
+            </p>
+            <img src="../icons/Star (1).svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <div class="header-price">
+          <div class="text"><p>Pricing</p></div>
+          <h2>Our Best Pricing</h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Basic</h3>
+            <b>$39 <span>/month</span></b>
+            <div class="line">
+              <p>Single Truck</p>
+            </div>
+            <div class="line">
+              <p>Full Insurance</p>
+            </div>
+            <div class="line">
+              <p>500 Km</p>
+            </div>
+            <div class="line last">
+              <p>Real-time rate shopping</p>
+            </div>
+            <div class="btns-blue">
+              <button class="btn-blue">Choose Plan</button>
+              <div></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Basic</h3>
+            <b>$39 <span>/month</span></b>
+            <div class="line">
+              <p>Single Truck</p>
+            </div>
+            <div class="line">
+              <p>Full Insurance</p>
+            </div>
+            <div class="line">
+              <p>500 Km</p>
+            </div>
+            <div class="line last">
+              <p>Real-time rate shopping</p>
+            </div>
+            <div class="btns-yellow">
+              <button class="btn-yellow" style="color: black">
+                Choose Plan
+              </button>
+              <div></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Basic</h3>
+            <b>$39 <span>/month</span></b>
+            <div class="line">
+              <p>Single Truck</p>
+            </div>
+            <div class="line">
+              <p>Full Insurance</p>
+            </div>
+            <div class="line">
+              <p>500 Km</p>
+            </div>
+            <div class="line last">
+              <p>Real-time rate shopping</p>
+            </div>
+            <div class="btns-blue">
+              <button class="btn-blue">Choose Plan</button>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <button id="backToTopBtn">
       <i><i class="fa-solid fa-arrow-up"></i></i>
     </button>
@@ -276,23 +400,23 @@
       });
       const customCursor = document.querySelector(".custom-cursor");
 
-document.addEventListener("mousemove", (e) => {
-  const smoke = document.createElement("div");
-  smoke.classList.add("tutun");
+      document.addEventListener("mousemove", (e) => {
+        const smoke = document.createElement("div");
+        smoke.classList.add("tutun");
 
-  smoke.style.left = `${e.pageX}px`;
-  smoke.style.top = `${e.pageY}px`;
+        smoke.style.left = `${e.pageX}px`;
+        smoke.style.top = `${e.pageY}px`;
 
-  document.body.appendChild(smoke);
+        document.body.appendChild(smoke);
 
-  setTimeout(() => {
-    smoke.style.opacity = "0";
-  }, 100);
+        setTimeout(() => {
+          smoke.style.opacity = "0";
+        }, 100);
 
-  setTimeout(() => {
-    smoke.remove();
-  }, 600);
-});
+        setTimeout(() => {
+          smoke.remove();
+        }, 600);
+      });
       let backToTopBtn = document.getElementById("backToTopBtn");
 
       window.onscroll = function () {

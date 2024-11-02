@@ -81,12 +81,10 @@ header a:hover {
   background-color: rgba(9, 18, 66, 0.25);
   z-index: 4;
   overflow: hidden;
-  
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
-
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .baner .header .container {
   display: flex;
@@ -464,4 +462,281 @@ header a:hover {
   opacity: 0.9;
   transition: transform 0.3s, opacity 0.5s;
   z-index: 100;
+}
+.comments {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+.comments .text {
+  padding: 3px 9px;
+  width: 100px;
+  height: 22px;
+  background: rgba(232, 232, 232, 0.5);
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.comments .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+.comments h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 35px;
+  color: #1c1f35;
+  margin-top: 15px;
+}
+.comments .line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.comments .line .arrows {
+  display: flex;
+  gap: 10px;
+}
+.comments .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comments .content .card {
+  width: 600px;
+  height: 400px;
+  padding: 60px 70px;
+  border-radius: 6px 0 0 6px;
+}
+.comments .content .card:last-child {
+  background-color: #091242;
+  border-radius: 0 6px 6px 0 !important;
+}
+.comments .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comments .profile .user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.comments .card:first-child .user p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #091242;
+}
+.comments .card:first-child .user b {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #091242;
+  margin-bottom: 4px;
+}
+.comments .card:last-child .user p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #fff;
+}
+.comments .card:last-child .user b {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.comments .card .textt {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #666c89;
+  margin: 24px 0 32px 0;
+}
+.comments .icon {
+  border-radius: 100%;
+  background: linear-gradient(127deg, #ffb629 0%, #ffda56 50.72%, #ffd7a6 100%);
+  width: 73px;
+  height: 73px;
+  display: grid;
+  place-items: center;
+}
+
+.price .cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.price .cards .card{
+  width: 380px;
+  padding: 60px 50px ;
+  background-color: #f4f4f4;
+}
+.price .cards .card:nth-child(2){
+ 
+  background-color: #091242;
+}
+.price .cards .card .line{
+  padding: 16px 0 ;
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+}
+.price .line.last{
+  border-bottom: 1px solid #d8d8d8;
+
+}
+.price .cards .card h3{
+  font-family: var(--second-family);
+font-weight: 500;
+font-size: 30px;
+text-align: center;
+color: #1c1f35;
+margin-bottom: 40px;
+}
+.price .cards .card:nth-child(2) h3{
+  font-family: var(--second-family);
+font-weight: 500;
+font-size: 30px;
+text-align: center;
+color: #fff;
+margin-bottom: 40px;
+}
+.price .card b{
+  font-family: var(--second-family);
+font-weight: 500;
+font-size: 85px;
+text-align: center;
+color: #1c1f35; 
+display: inline-block;
+ margin-bottom: 40px ;
+
+
+}
+.price .card:nth-child(2) b{
+  font-family: var(--second-family);
+font-weight: 500;
+font-size: 85px;
+text-align: center;
+color: #fff; 
+display: inline-block;
+ margin-bottom: 40px ;
+
+
+}
+.price .card b span{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 22px;
+color: #1c1f35
+}
+.price .card:nth-child(2) b span{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 22px;
+color: #fff
+}
+.price .line p{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #1c1f35;
+}
+.price .card:nth-child(2) .line p{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #fff;
+}
+.price .cards .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price .text {
+  padding: 3px 9px;
+  width: 100px;
+  height: 22px;
+  background: rgba(232, 232, 232, 0.5);
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.price{
+  padding: 100px 0;
+}
+.header-price{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+.price .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+.price h2{
+  font-family: var(--second-family);
+font-weight: 600;
+font-size: 35px;
+text-align: center;
+color: #1c1f35;
+}
+.btn-yellow {
+  background: linear-gradient(127deg, #ffb629 0%, #ffda56 50.72%, #ffd7a6 100%);  width: 180px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  text-align: center;
+  color: #fff;
+  z-index: 10 !important;
+}
+
+.btns-yellow {
+  width: 180px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.btns-yellow div {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.7;
+}
+.btns-yellow:hover div {
+  transform: scale(5);
+  transition: all 0.5s ease-in-out;
 }
