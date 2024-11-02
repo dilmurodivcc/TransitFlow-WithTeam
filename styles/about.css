@@ -81,6 +81,12 @@ header a:hover {
   background-color: rgba(9, 18, 66, 0.25);
   z-index: 4;
   overflow: hidden;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
 }
 .baner .header .container {
   display: flex;
@@ -97,11 +103,8 @@ header a:hover {
   align-items: center;
   gap: 20px;
 }
-.baner .back {
-  background: linear-gradient(90deg, #032d5f 0%, rgba(9, 18, 66, 0.2) 100%);
-  z-index: 1;
-  height: 100%;
-  width: 100%;
+.baner .nav {
+  margin: 30px 0 26px 0;
 }
 .baner .stroke {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -118,11 +121,6 @@ header a:hover {
   color: #fff;
   text-decoration: none;
 }
-
-.baner .nav {
-  margin: 30px 0 26px 0;
-}
-
 .baner .sacial-links {
   margin: 30px 0 26px 0;
   display: flex;
@@ -141,6 +139,13 @@ header a:hover {
   color: #23212a;
   border: none;
 }
+.baner .back {
+  background: linear-gradient(90deg, #032d5f 0%, rgba(9, 18, 66, 0.2) 100%);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
 .baner .content .text {
   padding: 3px 9px;
   width: 85px;
@@ -161,19 +166,272 @@ header a:hover {
   font-size: 60px;
   color: #fff;
 }
-.baner .container{
+.baner .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.baner .content{
+.baner .content {
   align-items: start;
   justify-content: center;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.baner .left{
+.baner .left {
   width: 50%;
   height: 380px;
+}
+.Our .container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Our .content {
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.Our a {
+  background: #f4f4f4;
+  padding: 12px 28px 12px 28px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 152%;
+  color: #1c1f35;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0 20px 0;
+}
+.Our a.active {
+  color: #fff;
+  background: #ffb82b !important ;
+}
+.btn-blue {
+  background: #091242;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  text-align: center;
+  color: #fff;
+  z-index: 10 !important;
+}
+
+.btns-blue {
+  width: 180px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 35px;
+}
+.btns-blue div {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background-color: #1f2a69;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.7;
+}
+.btns-blue:hover div {
+  transform: scale(5);
+  transition: all 0.5s ease-in-out;
+}
+.Our .images img {
+  margin-left: -110px;
+}
+
+.Our h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #1c1f35;
+}
+.Our p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #666c89;
+}
+.Our .content .text {
+  padding: 3px 9px;
+  width: 90px;
+  height: 22px;
+  background: #f4f4f4;
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.Our .content .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+.logist .text {
+  padding: 3px 9px;
+  width: 90px;
+  height: 22px;
+  background: #f4f4f4;
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.logist .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+
+.logist {
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+.logist h3 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #1c1f35;
+  margin-top: 15px;
+}
+
+.logist .btns-blue {
+  margin-top: 50px;
+}
+.logist .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logist .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  margin-top: 50px;
+}
+.logist .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.logist .cards .card img {
+  display: block;
+  margin-bottom: 20px;
+}
+.logist .cards .card b {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  color: #1c1f35;
+}
+.logist .cards .card p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #666c89;
+  margin-top: 10px;
+}
+.meet {
+  padding: 100px 0;
+}
+.meet .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meet .text {
+  padding: 3px 9px;
+  width: 150px;
+  height: 22px;
+  background: #f4f4f4;
+  border-left: 4px solid #ffb629;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.meet .text p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px !important;
+  color: #1c1f35;
+  text-align: center;
+}
+.meet h2 {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #1c1f35;
+  margin-top: 16px;
+}
+.meet .user {
+  width: 360px;
+  height: 430px;
+}
+.meet .card {
+  width: 360px;
+  height: 530px;
+  position: relative;
+  overflow: hidden;
+}
+.meet .sacial-icons {
+  position: absolute;
+  z-index: 20;
+  bottom: 100px;
+  right: 0px;
+  padding: 20px 17px 20px 20px;
+  transform: translate(0%, 50%);
+  background: linear-gradient(127deg, #ffb629 0%, #ffda56 50.72%, #ffd7a6 100%);
+  display: flex;
+}
+.meet .footer {
+  height: 110px;
+  background-color: #1c1f35;
+  width: 100%;
+  margin-top: -10px;
+  padding: 35px;
+}
+.meet .footer b {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.meet .footer p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 152%;
+  color: #fff;
+}
+.meet .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
 }
